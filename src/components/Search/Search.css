@@ -1,0 +1,16 @@
+.input-group {
+    /* display: block;
+    border-radius: 1.3em;
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    _background-color: rgba(225, 211, 214, 0.5);
+    background-color: transparent !important; */
+    width: 50% !important;
+}
+.form-control{
+    background-color: rgb(251, 251, 251, 0.3)!important;
+
+}
+.input-group-text {
+    background-color: rgb(251, 251, 251, 0.3) !important;
+
+}

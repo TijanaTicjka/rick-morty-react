@@ -1,0 +1,6 @@
+.home {
+    background:linear-gradient(0deg, rgba(0, 0, 0.2, 0.3), rgba(0, 0, 0.2, 0.3)),
+    url(../../assets/rick-and-morty.png) no-repeat center center fixed;
+    min-height: calc(100vh - 4em);
+    background-size: cover;
+}
