@@ -35,7 +35,7 @@ export const Home = () => {
                 setCharacters([]);
               };
         });
-    }, [timeForCall, searchTerm]);
+    }, [timeForCall, searchTerm, pageNumber, pageForCall]);
 
     return(
         <Container fluid className='home'>
