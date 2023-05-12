@@ -28,8 +28,8 @@ export const CharacterCard = ({name, image, status, id, location}) => {
     }
 
     return (
-        <Card onClick={()=> navigate(`/character/${id}`)}
-            className="card-home" 
+        <Card
+            className={hoveredCardIndex === id ? "card-home card-hovered" : "card-home"}
             onMouseEnter={() => handleEnter(id)}
             onMouseLeave={handleLeave}>
             <Card.Img variant="top" src={image} />
