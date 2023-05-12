@@ -30,7 +30,7 @@ displaying all fields of the character schema.
 
 ### Deployment
 
-The project is deployed and can be accessed [here](https://tijanamilenkovic-rick-and-morty.netlify.app).
+The project is deployed and can be accessed [here](https://tijanamilenkovic-rick-morty-app.netlify.app/).
 
 
 # Getting Started with Create React App
