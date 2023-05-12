@@ -16,8 +16,9 @@ export const PaginationCharacters = ({
         limit={10}
         changePage={(pageNumber) => {
             setPageForCall(Math.ceil(pageNumber/2));
-            setTimeForCall(prevTimeForCall => !prevTimeForCall)
-            setPageNumber(pageNumber)}
+            setTimeForCall(prevTimeForCall => !prevTimeForCall);
+            setPageNumber(pageNumber);
+            window.scrollTo({ top: 0, behavior: 'smooth' });}
         }
         ellipsis={1}
         />

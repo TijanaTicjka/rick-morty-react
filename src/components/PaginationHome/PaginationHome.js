@@ -14,9 +14,10 @@ export const PaginationHome = ({
         total={totalCharacters}
         limit={20}
         changePage={(pageNumber) => {
-            setPageNumber(pageNumber)
-            setPageForCall(pageNumber)
-            setTimeForCall(prevTimeForCall => !prevTimeForCall)}
+            setPageNumber(pageNumber);
+            setPageForCall(pageNumber);
+            setTimeForCall(prevTimeForCall => !prevTimeForCall);
+            window.scrollTo({ top: 0, behavior: 'smooth' });}
         }
         ellipsis={1}
         />
