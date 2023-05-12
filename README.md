@@ -1,3 +1,38 @@
+# Rick and Morty
+
+![Screenshot of a landing page](./src/assets/rick-and-morty-landing.png)
+
+![Screenshot of a single-character page](./src/assets/rick-and-morty-detail-view.png)
+
+## Description
+
+The goal of this project is to create a web application for browsing Rick & Morty characters.
+
+Rick and Morty is a  web application for browsing Rick & Morty characters from the Rick and Morty TV show, and view their details. The application consumes the REST API provided [here](https://rickandmortyapi.com/documentation/).
+
+### Features
+
+- Primary view of the application is a grid view, displaying character cards for all
+characters available in the API with pagination (20 characters per page as The API automatically paginated the responses).
+- Character cards displayed in the grid include the character's image, name,
+and last known location.
+- Search field that allows user to search for characters.
+- The maximum number of searched characters displayed to the user is 10, even if there
+are more search results.
+- The search page supports pagination to allow the user to view more results.
+- Clicking on a character card leads to a detailed view of that character,
+displaying all fields of the character schema.
+
+### Technologies Used
+
+- The application is built using the ReactJS library, React Bootstrap, Vanilla Bootstrap and CSS.
+- The project is designed to be fully responsive, providing an optimal user experience across various devices, including mobile phones, tablets, laptops, and desktop computers. 
+
+### Deployment
+
+The project is deployed and can be accessed [here](https://tijanamilenkovic-rick-and-morty.netlify.app).
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

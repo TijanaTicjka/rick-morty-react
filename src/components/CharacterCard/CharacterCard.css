@@ -1,0 +1,46 @@
+.card-home {
+    width: 18rem !important;
+    height: 27rem !important; 
+    padding-top: 0.8rem;
+    position: relative;
+}
+
+.card-header-home{
+    color:rgb(43, 168, 226) !important;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.1em;
+}
+
+.badge-home {
+    position: absolute !important;
+    width: 35%; 
+    text-align: center;
+    font-size: 1.1em !important;
+    line-height: 1.7 !important;
+    margin-left: 9.2em;
+}
+
+.card-home:hover .card-overlay {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: -0.75em;
+    margin-top: -0.85em;
+    border: 2px solid rgba(0, 0, 0, 0.8);
+    border-radius: 0.3em;
+}
+
+.card-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+}
+
+.card-button{
+    width: 40%;
+    height: 2.5em;
+}
