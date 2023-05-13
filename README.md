@@ -6,14 +6,12 @@
 
 ## Description
 
-The goal of this project is to create a web application for browsing Rick & Morty characters.
-
 Rick and Morty is a  web application for browsing Rick & Morty characters from the Rick and Morty TV show, and view their details. The application consumes the REST API provided [here](https://rickandmortyapi.com/documentation/).
 
 ### Features
 
 - Primary view of the application is a grid view, displaying character cards for all
-characters available in the API with pagination (20 characters per page as The API automatically paginated the responses).
+characters available in the API with pagination.
 - Character cards displayed in the grid include the character's image, name,
 and last known location.
 - Search field that allows user to search for characters.
