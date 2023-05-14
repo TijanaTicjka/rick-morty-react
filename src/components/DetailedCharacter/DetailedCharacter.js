@@ -17,7 +17,7 @@ export const DetailedCharacter = () => {
 
     if (!character) return null;
 
-     let badgeClass = "badge-detailed";
+    let badgeClass = "badge-detailed";
 
     if (character.status === "Alive") {
         badgeClass += " bg-success";

@@ -39,7 +39,7 @@ export const CharacterCard = ({name, image, status, id, location}) => {
                 <ListGroup.Item><span className="text-muted">Last location:</span><p>{location}</p> </ListGroup.Item>
             </ListGroup>
             <div className="card-overlay">
-                <Button className="card-button" variant="outline-info" size="sm" onClick={()=> navigate(`/character/${id}`)} > See More </Button>
+                <Button className="card-button text-white" variant="info" size="md" onClick={()=> navigate(`/character/${id}`)} > See More </Button>
             </div>
         </Card>
     );
