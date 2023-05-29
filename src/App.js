@@ -1,5 +1,5 @@
 import './App.css';
-import { Routes, Route, Navigate} from 'react-router';
+import { Routes, Route} from 'react-router';
 import { Layout } from '../src/components/Layout/Layout'
 import { Home } from './components/Home/Home';
 import { DetailedCharacter } from './components/DetailedCharacter/DetailedCharacter';
