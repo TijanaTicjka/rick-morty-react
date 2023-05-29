@@ -11,7 +11,6 @@ export const Home = () => {
     const [pageNumber, setPageNumber] = useState(1);
     const [characters, setCharacters] = useState([]);
     const [pageForCall, setPageForCall] = useState(1);
-    const [timeForCall, setTimeForCall] = useState(false);
     const [totalCharacters, setTotalCharacters] = useState(0);
     const [searchTerm, setSearchTerm] = useState("");
    
@@ -35,7 +34,7 @@ export const Home = () => {
                 setCharacters([]);
               };
         });
-    }, [timeForCall, searchTerm, pageNumber, pageForCall]);
+    }, [searchTerm, pageNumber, pageForCall]);
 
     return(
         <Container fluid className='home'>
@@ -55,7 +54,7 @@ export const Home = () => {
                 </Col>
             </Row>
             <Row className="pb-3 d-flex flex-wrap justify-content-center gap-3 mt-3 align-items-center">
-                {characters && characters.length > 0 ? (
+                {characters.length > 0 ? (
                     characters.map((c) => (
                         <CharacterCard
                         key={c.id}
@@ -71,22 +70,19 @@ export const Home = () => {
             </Row>
             <Row>
                 <Col className="d-flex justify-content-center align-items-end pb-3 pagination-div">
-                    {characters && characters.length > 0 ? (
+                    {characters.length > 0 ? (
                         searchTerm ? (
                             <PaginationCharacters
                             setPageNumber={setPageNumber}
                             pageNumber={pageNumber}
                             totalCharacters={totalCharacters}
                             setPageForCall={setPageForCall}
-                            setTimeForCall={setTimeForCall}
                             /> ) : (
                             <PaginationHome
                             setPageNumber={setPageNumber}
                             pageNumber={pageNumber}
                             totalCharacters={totalCharacters}
                             setPageForCall={setPageForCall}
-                            timeForCall={timeForCall}
-                            setTimeForCall={setTimeForCall}
                             /> )
                         ) : ( <div></div> )
                     };

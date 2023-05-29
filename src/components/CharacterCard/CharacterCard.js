@@ -1,21 +1,10 @@
 import { Card, ListGroup, Badge, Button} from "react-bootstrap";
 import { useNavigate } from "react-router";
-import { useState } from "react";
 import './CharacterCard.css';
-
 
 export const CharacterCard = ({name, image, status, id, location}) => {
 
-    const [hoveredCardIndex, setHoveredCardIndex] = useState(null);
     const navigate = useNavigate();
-
-    const handleEnter = (id) => {
-        setHoveredCardIndex(id);
-    };
-
-    const handleLeave = () => {
-        setHoveredCardIndex(null);
-    };
 
     let badgeClass = "badge-home";
 
@@ -28,10 +17,7 @@ export const CharacterCard = ({name, image, status, id, location}) => {
     }
 
     return (
-        <Card
-            className={hoveredCardIndex === id ? "card-home card-hovered" : "card-home"}
-            onMouseEnter={() => handleEnter(id)}
-            onMouseLeave={handleLeave}>
+        <Card className="card-home">
             <Card.Img variant="top" src={image} />
             <Badge className={badgeClass}>{status}</Badge>
             <Card.Header className="card-header-home">{name}</Card.Header>

@@ -4,8 +4,7 @@ export const PaginationHome = ({
     pageNumber,
     setPageNumber,
     totalCharacters,
-    setPageForCall,
-    setTimeForCall}) => {
+    setPageForCall }) => {
 
     return (
         <PaginationControl
@@ -16,7 +15,6 @@ export const PaginationHome = ({
         changePage={(pageNumber) => {
             setPageNumber(pageNumber);
             setPageForCall(pageNumber);
-            setTimeForCall(prevTimeForCall => !prevTimeForCall);
             window.scrollTo({ top: 0, behavior: 'smooth' });}
         }
         ellipsis={1}
